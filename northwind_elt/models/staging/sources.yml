@@ -1,0 +1,86 @@
+version: 2
+
+sources:
+  - name: elt_northwind
+    description: This is a replica of the Postgres database used by our northwind
+    tables:
+      - name: public_orders
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: order_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_products
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: product_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_shippers
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: shipper_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_employees
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: employee_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_customers
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: customer_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_region
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: region_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_suppliers
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: supplier_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_categories
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: category_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_order_details
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: order_id
+            description: Primary key of the orders table
+            tests:
+              - not_null
